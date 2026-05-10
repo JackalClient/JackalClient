@@ -1,5 +1,18 @@
-#pragma once
-//数学库
+﻿#pragma once
+
+/*
+ *           ______  ______  __  __  ____             ______  ______  ______   ____     ____
+ *   /'\_/`\/\  _  \/\__  _\/\ \/\ \/\  _`\   /'\_/`\/\  _  \/\__  _\/\__  _\ /\  _`\  /\  _`\
+ *  /\      \ \ \L\ \/_/\ \/\ \ \_\ \ \ \L\_\/\      \ \ \L\ \/_/\ \/\/_/\ \/ \ \ \/\_\\ \,\L\_\
+ *  \ \ \__\ \ \  __ \ \ \ \ \ \  _  \ \  _\L\ \ \__\ \ \  __ \ \ \ \   \ \ \  \ \ \/_/_\/_\__ \
+ *   \ \ \_/\ \ \ \/\ \ \ \ \ \ \ \ \ \ \ \L\ \ \ \_/\ \ \ \/\ \ \ \ \   \_\ \__\ \ \L\ \ /\ \L\ \
+ *    \ \_\\ \_\ \_\ \_\ \ \_\ \ \_\ \_\ \____/\ \_\\ \_\ \_\ \_\ \ \_\  /\_____\\ \____/ \ `\____\
+ *     \/_/ \/_/\/_/\/_/  \/_/  \/_/\/_/\/___/  \/_/ \/_/\/_/\/_/  \/_/  \/_____/ \/___/   \/_____/
+ *
+ *
+ */
+// 数学库
+
 #define sqrt2	1.4142135623730951
 #define fequ(f1, f2) (abs(f1-f2) < 0.001f)
 
@@ -27,15 +40,17 @@ inline T safe_divide(T numerator, T denominator, T fallback = 0)
 	return (denominator == 0) ? fallback : numerator / denominator;
 }
 
-
+float Triangle(float t) {
+	return t < 0.5f ? (t * 2.0f) : (2.0f - t * 2.0f);
+}
 
 template <typename _T>
-constexpr _T CJZAPI pow2(const _T& x)
+constexpr _T WMAPI pow2(const _T& x)
 {
 	return (x * x);
 }
 
-RECT CJZAPI MakeRect(double left, double top, double right, double bottom)
+RECT WMAPI MakeRect(double left, double top, double right, double bottom)
 {
 	RECT rt;
 	rt.left = LONG(left);
@@ -79,28 +94,28 @@ Point RotatedPoint(double x, double y, double theta)
 //}
 
 template <typename _T>
-constexpr _T CJZAPI ClampA(_T& val, _T min = 0, _T max = 2147483647) {	//限定范围
+constexpr _T WMAPI ClampA(_T& val, _T min = 0, _T max = 2147483647) {	//限定范围
 	if (val < min) val = min;
 	else if (val > max) val = max;
 	return val;
 }
 template <typename _T>
-constexpr _T CJZAPI Clamp(_T val, _T min = 0, _T max = 2147483647) {	//限定范围
+constexpr _T WMAPI Clamp(_T val, _T min = 0, _T max = 2147483647) {	//限定范围
 	if (val < min) val = min;
 	else if (val > max) val = max;
 	return val;
 }
-constexpr int CJZAPI ClampByte(int b)
+constexpr int WMAPI ClampByte(int b)
 {
 	return Clamp(b, 0, 255);
 }
 template <typename _T>
-auto CJZAPI MapValue(_T val, _T prev_min, _T prev_max, _T cur_min, _T cur_max)
+auto WMAPI MapValue(_T val, _T prev_min, _T prev_max, _T cur_min, _T cur_max)
 {
 	return cur_min + (cur_max - cur_min) * (val - prev_min) / double(prev_max - prev_min);
 }
 template <typename _T>
-void CJZAPI MapValueA(_T& val, _T prev_min, _T prev_max, _T cur_min, _T cur_max)
+void WMAPI MapValueA(_T& val, _T prev_min, _T prev_max, _T cur_min, _T cur_max)
 {
 	val = cur_min + (cur_max - cur_min) * (val - prev_min) / double(prev_max - prev_min);
 }
@@ -133,7 +148,7 @@ double TriangularPulse(double t, double period, double Amp = 1.0)
 		return (1.0 - (t - period / 2.0) / (period / 2.0)) * Amp;
 }
 template <typename _T>
-constexpr double CJZAPI Lerp(_T startValue, _T endValue, double rate)
+constexpr double WMAPI Lerp(_T startValue, _T endValue, double rate)
 {
 	if (fequ(rate, 0.0))
 		return startValue;
@@ -142,7 +157,7 @@ constexpr double CJZAPI Lerp(_T startValue, _T endValue, double rate)
 	return startValue + (endValue - startValue) * rate;
 }
 template <typename _T>
-constexpr double CJZAPI LerpRadian(_T startAngle, _T endAngle, double rate)
+constexpr double WMAPI LerpRadian(_T startAngle, _T endAngle, double rate)
 {
 	while (endAngle - startAngle > PI + 0.1)
 		endAngle -= PI * 2.0;
@@ -150,8 +165,17 @@ constexpr double CJZAPI LerpRadian(_T startAngle, _T endAngle, double rate)
 		endAngle += PI * 2.0;
 	return Lerp(startAngle, endAngle, rate);
 }
+
+float AngleDelta(float from, float to)
+{
+	float delta = fmodf(to - from, 360.0f);
+	if (delta > 180.0f) delta -= 360.0f;
+	if (delta < -180.0f) delta += 360.0f;
+	return delta;
+}
+
 //template <typename _T>
-//constexpr double CJZAPI DestRadian(_T dstOriginal, _T startAngle)
+//constexpr double WMAPI DestRadian(_T dstOriginal, _T startAngle)
 //{
 //	while (dstOriginal - startAngle > PI + 0.1)
 //		dstOriginal -= PI * 2.0;
@@ -174,7 +198,7 @@ constexpr double DestRadian(T dstOriginal, T startAngle) {
 
 	return result;
 }
-inline double CJZAPI EaseInExpo(double _x)
+inline double WMAPI EaseInExpo(double _x)
 {
 	return fequ(_x, 0.0f) ? 0.0 : pow(2.0, 10.0 * _x - 10.0);
 }
@@ -190,12 +214,12 @@ inline double EaseInOutBack(double _x)
 		? (pow(2 * _x, 2) * ((c2 + 1) * 2 * _x - c2)) / 2
 		: (pow(2 * _x - 2, 2) * ((c2 + 1) * (_x * 2 - 2) + c2) + 2) / 2;
 }
-inline double CJZAPI EaseOutCubic(double _x)
+inline double WMAPI EaseOutCubic(double _x)
 {
 	return 1 - pow(1 - _x, 3);
 }
 
-inline double CJZAPI EaseOutBack(double x) {
+inline double WMAPI EaseOutBack(double x) {
 	constexpr double c1 = 1.70158;
 	constexpr double c3 = c1 + 1;
 
@@ -212,7 +236,7 @@ inline double EaseInOutElastic(double _x)
 		? -(pow(2, 20 * _x - 10) * sin((20 * _x - 11.125) * c5)) / 2
 		: (pow(2, -20 * _x + 10) * sin((20 * _x - 11.125) * c5)) / 2 + 1;
 }
-inline double CJZAPI EaseOutBounce(double _x)
+inline double WMAPI EaseOutBounce(double _x)
 {
 	const double n1 = 7.5625;
 	const double d1 = 2.75;
@@ -230,7 +254,7 @@ inline double CJZAPI EaseOutBounce(double _x)
 		return n1 * (_x -= 2.625 / d1) * _x + 0.984375;
 	}
 }
-inline double CJZAPI EaseInQuad(double _x)
+inline double WMAPI EaseInQuad(double _x)
 {
 	return _x * _x;
 }
@@ -250,7 +274,14 @@ inline double EaseInOutExpo(double _x)
 		: (2 - pow(2, -20 * _x + 10)) / 2;
 }
 
-long CJZAPI RandomRange(auto Min = 0, auto Max = 32767, bool rchMin = true, bool rchMax = true) {
+inline float ExpSmoothing(float cur, float target, float sharpness, float dt) {
+	// sharpness 越大越“跟手”
+	// dt = GetFrameTime()
+	float k = 1.0f - std::exp(-sharpness * dt);
+	return cur + (target - cur) * k;
+}
+
+long WMAPI RandomRange(auto Min = 0, auto Max = 32767, bool rchMin = true, bool rchMax = true) {
 	//随机数值区间
 	if (Max - Min == 0)
 		return Min;
@@ -292,7 +323,7 @@ long CJZAPI RandomRange(auto Min = 0, auto Max = 32767, bool rchMin = true, bool
 	//else							//(a,b)
 	//	return (a % (Max - Min - 1)) + Min + 1;
 }
-double CJZAPI RandomRangeDouble(double _min, double _max,	//min,max
+double WMAPI RandomRangeDouble(double _min, double _max,	//min,max
 	bool rchMin = true, bool rchMax = true,	//开/闭 
 	UINT uPrec = 2	//精度（位数） 
 )
@@ -306,21 +337,21 @@ double CJZAPI RandomRangeDouble(double _min, double _max,	//min,max
 	return (p_small * (double)res);
 }
 template<typename _T>
-inline _T CJZAPI Choice(initializer_list<_T> choices) {
+inline _T WMAPI Choice(initializer_list<_T> choices) {
 	vector<_T> vec(choices);
 	return vec[RandomRange(0, vec.size() - 1, true, true)];
 }
 template<typename _T>
-inline _T CJZAPI Choice(const vector<_T>& choices_vector) {
+inline _T WMAPI Choice(const vector<_T>& choices_vector) {
 	return choices_vector[RandomRange(0, choices_vector.size() - 1, true, true)];
 }
 template<typename _T>
-inline _T& CJZAPI ChoiceRef(vector<_T>& choices_vector) {
+inline _T& WMAPI ChoiceRef(vector<_T>& choices_vector) {
 	return choices_vector[RandomRange(0, choices_vector.size() - 1, true, true)];
 }
 
 template <typename _T>
-void CJZAPI random_shuffle(vector<_T>& vec) {
+void WMAPI random_shuffle(vector<_T>& vec) {
 	random_device rd;
 	mt19937 g(rd());
 
@@ -328,18 +359,18 @@ void CJZAPI random_shuffle(vector<_T>& vec) {
 }
 
 template<typename _T>
-inline bool CJZAPI Percent(_T prob) {
+inline bool WMAPI Percent(_T prob) {
 	return (RandomRange(0, 100, true, false) < prob);
 }
 template<typename _T>
-inline bool CJZAPI Permille(_T prob) {	//千分数
+inline bool WMAPI Permille(_T prob) {	//千分数
 	return (RandomRange(0, 1000, true, false) < prob);
 }
-inline bool CJZAPI Decision(float prob)
+inline bool WMAPI Decision(float prob)
 {
 	return Percent(prob * 100.0f);
 }
-inline bool CJZAPI FractionProb(auto denominator, int numerator = 1)
+inline bool WMAPI FractionProb(auto denominator, int numerator = 1)
 {
 	return Percent(100.0 * numerator / double(denominator));
 }
@@ -370,16 +401,16 @@ typedef USHORT DIR, * PDIR;	//方向
 #define PDIR8	PDIR
 
 #define NO_DIR 0x00
-#define UP 0x01
-#define DIR_FIRST UP
-#define RIGHTUP 0x02
-#define RIGHT 0x03
-#define RIGHTDOWN 0x04
-#define DOWN 0x05
-#define LEFTDOWN 0x06
-#define LEFT 0x07
-#define LEFTUP 0x08
-#define DIR_LAST LEFTUP
+#define DIR_UP 0x01
+#define DIR_FIRST DIR_UP
+#define DIR_RIGHTUP 0x02
+#define DIR_RIGHT 0x03
+#define DIR_RIGHTDOWN 0x04
+#define DIR_DOWN 0x05
+#define DIR_LEFTDOWN 0x06
+#define DIR_LEFT 0x07
+#define DIR_LEFTUP 0x08
+#define DIR_LAST DIR_LEFTUP
 
 #define VERT	0x01
 #define HORIZ	0x03
@@ -410,21 +441,21 @@ inline DIR OppoDir(DIR dir)
 void DirOffsetPos(double& x, double& y, DIR dir, double offset = 10.0) {
 	//依据方向位移坐标
 
-	if (dir == UP)
+	if (dir == DIR_UP)
 		y -= offset;
-	else if (dir == RIGHTUP)
+	else if (dir == DIR_RIGHTUP)
 		x += offset, y -= offset;
-	else if (dir == RIGHT)
+	else if (dir == DIR_RIGHT)
 		x += offset;
-	else if (dir == RIGHTDOWN)
+	else if (dir == DIR_RIGHTDOWN)
 		x += offset, y += offset;
-	else if (dir == DOWN)
+	else if (dir == DIR_DOWN)
 		y += offset;
-	else if (dir == LEFTDOWN)
+	else if (dir == DIR_LEFTDOWN)
 		x -= offset, y += offset;
-	else if (dir == LEFT)
+	else if (dir == DIR_LEFT)
 		x -= offset;
-	else if (dir == LEFTUP)
+	else if (dir == DIR_LEFTUP)
 		x -= offset, y--;
 	else {
 		return;
@@ -455,35 +486,35 @@ double GetDirRadianForDraw(DIR dir)
 {	//获取方向弧度rad
 	switch (dir)
 	{
-	case UP: {
+	case DIR_UP: {
 		return 0;
 		break;
 	}
-	case LEFTUP: {
+	case DIR_LEFTUP: {
 		return (PI / 4);
 		break;
 	}
-	case LEFT: {
+	case DIR_LEFT: {
 		return PI / 2;
 		break;
 	}
-	case LEFTDOWN: {
+	case DIR_LEFTDOWN: {
 		return (PI / 4 * 3);
 		break;
 	}
-	case DOWN: {
+	case DIR_DOWN: {
 		return PI;
 		break;
 	}
-	case RIGHTDOWN: {
+	case DIR_RIGHTDOWN: {
 		return (PI * 1.25);
 		break;
 	}
-	case RIGHT: {
+	case DIR_RIGHT: {
 		return (PI * 1.5);
 		break;
 	}
-	case RIGHTUP: {
+	case DIR_RIGHTUP: {
 		return (PI * 1.75);
 		break;
 	}
@@ -532,19 +563,19 @@ double RandomTheta()
 
 bool IsVertDir(DIR dir)
 {
-	if (dir == UP || dir == DOWN)
+	if (dir == DIR_UP || dir == DIR_DOWN)
 		return true;
 	return false;
 }
 bool IsHorizDir(DIR dir)
 {
-	if (dir == RIGHT || dir == LEFT)
+	if (dir == DIR_RIGHT || dir == DIR_LEFT)
 		return true;
 	return false;
 }
 bool IsBentDir(DIR dir)
 {
-	if (dir >= RIGHTUP && dir <= LEFTUP)
+	if (dir >= DIR_RIGHTUP && dir <= DIR_LEFTUP)
 		return true;
 	return false;
 }
@@ -555,6 +586,48 @@ inline double RadToDeg(double radian)
 inline double DegToRad(double degrees)
 {
 	return degrees / 180.0 * PI;
+}
+
+DIR GetNearestEdgeDirection(float xr, float yr, bool randomWhenUnsure = false)
+{
+	// 距离四条边的“比例距离”
+	float distLeft = xr;
+	float distRight = 1.0f - xr;
+	float distUp = yr;
+	float distDown = 1.0f - yr;
+
+	float minDist = distLeft;
+	DIR dir = DIR_LEFT;
+
+	if (distRight < minDist) {
+		minDist = distRight;
+		dir = DIR_RIGHT;
+	}
+	if (distUp < minDist) {
+		minDist = distUp;
+		dir = DIR_UP;
+	}
+	if (distDown < minDist) {
+		minDist = distDown;
+		dir = DIR_DOWN;
+	}
+
+	// 可选：中心区域“模糊不确定”
+	// 比如非常接近中心时认为无明显最近边
+	const float EPS = 1e-4f;
+	int sameCount = 0;
+	if (fabs(distLeft - minDist) < EPS) sameCount++;
+	if (fabs(distRight - minDist) < EPS) sameCount++;
+	if (fabs(distUp - minDist) < EPS) sameCount++;
+	if (fabs(distDown - minDist) < EPS) sameCount++;
+
+	if (sameCount > 1) {
+		return randomWhenUnsure
+			? Choice({ DIR_LEFT, DIR_RIGHT, DIR_UP, DIR_DOWN })
+			: NO_DIR;
+	}
+
+	return dir;
 }
 
 bool InRect(const RECT& rt, int x, int y)
@@ -576,6 +649,12 @@ bool InDistance(double x0, double y0, double x, double y, double dist)
 {	//距离内？
 	double fdist = Distance(x0, y0, x, y);
 	return (fdist < dist);
+}
+inline float DistPointRectSq(float px, float py, float rx, float ry, float rw, float rh) {
+	float cx = (px < rx) ? rx : (px > rx + rw ? rx + rw : px);
+	float cy = (py < ry) ? ry : (py > ry + rh ? ry + rh : py);
+	float dx = px - cx, dy = py - cy;
+	return dx * dx + dy * dy;
 }
 inline bool OnComplexPlane(double x, double y)
 {	//是否在复平面上
