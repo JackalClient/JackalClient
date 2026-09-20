@@ -53,11 +53,10 @@ English | [简体中文](./README-zh-hans-cn.md)
 
 ### Just looks like
 
-
-<img width="1280" height="760" alt="v0 6a" src="https://github.com/user-attachments/assets/e352dee6-32e3-4336-b1ee-9028d7501c6e" />
-<img width="1280" height="761" alt="hacker_style" src="https://github.com/user-attachments/assets/71e617d3-b1ad-472f-b088-d3bd478d8c28" />
 <img width="1280" height="757" alt="vape-style" src="https://github.com/user-attachments/assets/556551db-bb9b-43cd-90b4-9641d125695f" />
-<img width="1264" height="752" alt="neverlose-style" src="https://github.com/user-attachments/assets/c4bdf775-c941-4ad4-92ce-ae3103360027" />
+<img width="2557" height="1511" alt="vape-style-cn" src="https://github.com/user-attachments/assets/213a88cc-2fd1-40dd-bb5b-1013b5c42eaf" />
+<img width="956" height="799" alt="neverlose-gui-beautified" src="https://github.com/user-attachments/assets/e4fb5636-5ec2-485e-8541-367d464abf55" />
+
 
 ### Zip extract password: Wormwake
 
@@ -65,19 +64,19 @@ English | [简体中文](./README-zh-hans-cn.md)
 [@Wormwaker](https://space.bilibili.com/3494361276877525)
 ### 's Bilibili Channel
 ### Please check:
-[Official Website](https://www.wormwake.com/jackalclient)
-[Documentation](https://doc.wormwake.com)
+- [Official Website](https://www.wormwake.com/jackalclient)
+- [Documentation](https://doc.wormwake.com)
 
 ### Bilibili Videos
-[\[English\] JackalClient Summer Trailer 2026](https://www.bilibili.com/video/BV1t1Nj65EZn/?p=2)
-[最强 Windows 美化工具箱 Jackal Client 下载与使用教程，小白也能看懂](https://www.bilibili.com/video/BV1vTMR6vELJ)
-[Re: 当我把 Vape 开到 Windows 上？ ft.JackalClientAlpha](https://www.bilibili.com/video/BV12sPCzfEyZ)
-find out more:
-[https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082](https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082)
+- [\[English\] JackalClient Summer Trailer 2026](https://www.bilibili.com/video/BV1t1Nj65EZn/?p=2)
+- [最强 Windows 美化工具箱 Jackal Client 下载与使用教程，小白也能看懂](https://www.bilibili.com/video/BV1vTMR6vELJ)
+- [Re: 当我把 Vape 开到 Windows 上？ ft.JackalClientAlpha](https://www.bilibili.com/video/BV12sPCzfEyZ)
+- find out more:
+- [https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082](https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082)
 
 
 ### QQ Channel: 
-Click the link to join our Tencent channel【JackalClient】：[https://pd.qq.com/s/8s4nsdc81?b=9](https://pd.qq.com/s/8s4nsdc81?b=9)
+- Click the link to join our Tencent channel【JackalClient】：[https://pd.qq.com/s/8s4nsdc81?b=9](https://pd.qq.com/s/8s4nsdc81?b=9)
 
 ### Project Start Date 2024/8/10
 
