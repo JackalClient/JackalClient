@@ -69,13 +69,15 @@ English | [简体中文](./README-zh-hans-cn.md)
 [Documentation](https://doc.wormwake.com)
 
 ### Bilibili Videos
+[\[English\] JackalClient Summer Trailer 2026](https://www.bilibili.com/video/BV1t1Nj65EZn/?p=2)
+[最强 Windows 美化工具箱 Jackal Client 下载与使用教程，小白也能看懂](https://www.bilibili.com/video/BV1vTMR6vELJ)
 [Re: 当我把 Vape 开到 Windows 上？ ft.JackalClientAlpha](https://www.bilibili.com/video/BV12sPCzfEyZ)
 find out more:
 [https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082](https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082)
 
 
 ### QQ Channel: 
-点击链接加入腾讯频道【JackalClient】：[https://pd.qq.com/s/8s4nsdc81?b=9](https://pd.qq.com/s/8s4nsdc81?b=9)
+Click the link to join our Tencent channel【JackalClient】：[https://pd.qq.com/s/8s4nsdc81?b=9](https://pd.qq.com/s/8s4nsdc81?b=9)
 
 ### Project Start Date 2024/8/10
 
@@ -166,38 +168,9 @@ Nice modules you can't miss:
 
 ## Premium Subscription
 
-- You can upgrade your client to PRO edition, which has a lot unique *options, modules and commands*. It also has a **Neverlose-styled** GUI.
+- You can upgrade your client to PRO edition if you like, which has a lot of unique *options, modules and commands* and a faster update. It also has a **Neverlose-styled** GUI.
 - Check it out: ![Get Jackal Pro](https://afdian.com/item/1eda4ca6ca2511f0a7ae52540025c377)
 
-____________________________
-
-Previous AD, just have a look ...qwq
-
-<img width="1014" height="569" alt="GUI2" src="https://github.com/user-attachments/assets/7d2b7c2c-07e9-42fd-b6b5-61883f4dfa66" />
 
 
-Best Ghost Client for Windows: Using Jackal Client to Defeat Your Opponents🥰
-
-J̷a̷c̷k̷a̷l̷C̷l̷i̷e̷n̷t̷  is a free hacker client designed for Windows, including 175+ awesome modules, ranging from Combat, Window, Process, File, Registry, Render to Misc. Everything is possible with this client, so overwhelm your system in your way!😋
-
-🍎 Free client
-
-🚁 Beautiful appearance just like Minecraft Cheats
-
-🍱 Customize your unique config
-
-🍔 40,000+ lines of c艹 code in this project
-
-😎 It took me 2 months
-
-🎁 The only client of this creativity
-
-Intro link on Bilibili🤗
-[https://b23.tv/oExflXC](https://b23.tv/oExflXC)
-
-Thanks for your support😆
-
-Join Wormwaker's QQ Group to obtain the latest version of the client!😛
-
-Any discussion about coding is welcome🤠
 
