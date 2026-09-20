@@ -48,7 +48,7 @@ English | [简体中文](./README-zh-hans-cn.md)
 
 ### a free Hacker Client for WINDOWS (Partial Source Code, esp. UI)
 
-### It's not a Minecraft Ghost Client XD
+### It's not a Minecraft Ghost Client XD. It provides many practical small features designed for Windows, enhancing your using experience.
 ### This project is not fully open-source. The repo serves solely as a download channel, and the project is still under active development.
 
 ### Just looks like
@@ -163,7 +163,7 @@ Nice modules you can't miss:
 - **Volume:** Helps you adjust system/process volume using mouse wheel.
 - **AudioIsolation:** Adjust process volumes to promise only one process can make sounds.
 
-**...and more (300+ modules)**
+**...and more (400+ modules)**
 
 ## Premium Subscription
 
