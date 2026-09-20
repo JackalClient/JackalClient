@@ -48,8 +48,8 @@
 
 ### 免费的 Windows 黑客端 （部分开源，界面部分）
 
-### 这并非是一个 Minecraft 作弊端，只是视觉模仿。
-### 这个项目并非完整开源，此仓库仅作下载渠道，且项目仍在更新中。
+### 这并非是一个 Minecraft 作弊端，只是视觉模仿。它提供了为 Windows 设计的很多实用小功能，提升你的开~~纪~~机体验。
+### 这个项目并非开源，此仓库仅作下载渠道，且项目仍在更新中。
 
 <img width="1280" height="760" alt="v0 6a" src="https://github.com/user-attachments/assets/e352dee6-32e3-4336-b1ee-9028d7501c6e" />
 <img width="1280" height="761" alt="hacker_style" src="https://github.com/user-attachments/assets/71e617d3-b1ad-472f-b088-d3bd478d8c28" />
@@ -62,17 +62,19 @@
 [@Wormwaker](https://space.bilibili.com/3494361276877525)
 
 ### 请查看
-[Official Website](https://www.wormwake.com/jackalclient)
-[Documentation](https://doc.wormwake.com)
+- [Official Website](https://www.wormwake.com/jackalclient)
+- [Documentation](https://doc.wormwake.com)
 
 ### B站视频
-[Re: 当我把 Vape 开到 Windows 上？ ft.JackalClientAlpha](https://www.bilibili.com/video/BV12sPCzfEyZ)
+- [顶尖视觉 Windows 客户端夏季宣传片 - JackalClient Summer Trailer 2026](https://www.bilibili.com/video/BV1t1Nj65EZn)
+- [最强 Windows 美化工具箱 Jackal Client 下载与使用教程，小白也能看懂](https://www.bilibili.com/video/BV1vTMR6vELJ)
+- [Re: 当我把 Vape 开到 Windows 上？ ft.JackalClientAlpha](https://www.bilibili.com/video/BV12sPCzfEyZ)
 
 ### B站合集链接
-[https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082](https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082)
+- [https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082](https://space.bilibili.com/3494361276877525/channel/collectiondetail?sid=3986082)
 
 ### QQ 频道 
-点击链接加入腾讯频道【JackalClient】：[https://pd.qq.com/s/8s4nsdc81?b=9](https://pd.qq.com/s/8s4nsdc81?b=9)
+- 点击链接加入腾讯频道【JackalClient】：[https://pd.qq.com/s/8s4nsdc81?b=9](https://pd.qq.com/s/8s4nsdc81?b=9)
 
 ### 项目开工日期 2024/8/10
 
@@ -160,39 +162,11 @@ Combat（战斗）、Window（窗口）、Process（进程）、Registry（注�
 - **Volume（音量）：** 通过鼠标滚轮调整系统 / 进程音量。
 - **AudioIsolation（音频隔离）：** 调整进程音量，确保只有一个进程发声。
 
-**……以及更多（300+ 模块）**
+**……以及更多（400+ 模块）**
 
 ## 高级订阅
-你可以升级客户端到 PRO 版本，包含大量独有的选项、模块和命令，并拥有类似 Neverlose 风格 的图形界面。
+你可以升级客户端到 PRO 版本，包含大量独有的选项、模块和命令，更新速度更快，并单独拥有一个类似 Neverlose 风格 的图形界面。
 查看详情：![购买Jackal专业版](https://afdian.com/item/1eda4ca6ca2511f0a7ae52540025c377)
-____________________________
-
-很古老的一个广告：
-
-<img width="1014" height="569" alt="GUI2" src="https://github.com/user-attachments/assets/7d2b7c2c-07e9-42fd-b6b5-61883f4dfa66" />
 
 
-Best Ghost Client for Windows: Using Jackal Client to Defeat Your Opponents🥰
 
-J̷a̷c̷k̷a̷l̷C̷l̷i̷e̷n̷t̷  is a free hacker client designed for Windows, including 175+ awesome modules, ranging from Combat, Window, Process, File, Registry, Render to Misc. Everything is possible with this client, so overwhelm your system in your way!😋
-
-🍎 Free client
-
-🚁 Beautiful appearance just like Minecraft Cheats
-
-🍱 Customize your unique config
-
-🍔 40,000+ lines of c艹 code in this project
-
-😎 It took me 2 months
-
-🎁 The only client of this creativity
-
-Intro link on Bilibili🤗
-[https://b23.tv/oExflXC](https://b23.tv/oExflXC)
-
-Thanks for your support😆
-
-Join Wormwaker's Fangroup to obtain the latest version of the client!😛
-
-Any discussion about coding is welcome🤠
