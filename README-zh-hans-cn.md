@@ -51,10 +51,9 @@
 ### 这并非是一个 Minecraft 作弊端，只是视觉模仿。它提供了为 Windows 设计的很多实用小功能，提升你的开~~纪~~机体验。
 ### 这个项目并非开源，此仓库仅作下载渠道，且项目仍在更新中。
 
-<img width="1280" height="760" alt="v0 6a" src="https://github.com/user-attachments/assets/e352dee6-32e3-4336-b1ee-9028d7501c6e" />
-<img width="1280" height="761" alt="hacker_style" src="https://github.com/user-attachments/assets/71e617d3-b1ad-472f-b088-d3bd478d8c28" />
 <img width="1280" height="757" alt="vape-style" src="https://github.com/user-attachments/assets/556551db-bb9b-43cd-90b4-9641d125695f" />
-<img width="1264" height="752" alt="neverlose-style" src="https://github.com/user-attachments/assets/c4bdf775-c941-4ad4-92ce-ae3103360027" />
+<img width="2557" height="1511" alt="vape-style-cn" src="https://github.com/user-attachments/assets/213a88cc-2fd1-40dd-bb5b-1013b5c42eaf" />
+<img width="956" height="799" alt="neverlose-gui-beautified" src="https://github.com/user-attachments/assets/e4fb5636-5ec2-485e-8541-367d464abf55" />
 
 ### 解压密码：Wormwake
 
